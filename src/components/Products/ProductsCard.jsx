@@ -15,7 +15,7 @@ const ProductCard = ({ data }) => {
             data-aos-delay={data.aosDelay}
             className="group"
             key={data._id}
-          >{console.log(data)}
+          >
             <div className="relative">
               <img
                 src={`${import.meta.env.VITE_ROOT_API}/images/${data?.images[0]?.filename}`}

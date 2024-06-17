@@ -9,6 +9,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import EmptyCart from "../../components/EmptyCart/EmptyCart";
 import { useNavigate } from "react-router-dom";
 // import FooterBanner from "../../components/FooterBanner/FooterBanner"
+import OrderForm from "../../AdminPannel/components/OrderForm/OrderForm";
 
 const ShoppingCart = () => {
   const dispatch = useDispatch();
@@ -28,9 +29,10 @@ const ShoppingCart = () => {
 // }
 
   const [totalPrice, setTotalPrice] = useState(0);
-
+  const { formCondition } = useSelector((state) => state.cartHandler);
   return (
     <div>
+      {formCondition && <OrderForm></OrderForm>}
       <div className="flex cursor-cell hover:bg-gray-200 hover:text-gray-500 flex-col items-center justify-center w-full pb-4 bg-gray-500 text-gray-200 h-32 lg:h-52 duration-300">
         <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold font-abc">
           Shopping Cart
@@ -57,12 +59,8 @@ const ShoppingCart = () => {
                       Quantity
                     </p>
                   </div>
+
                   <div className="col-span-2">
-                    <p className="font-normal text-lg leading-8 text-gray-400 text-center">
-                      Size
-                    </p>
-                  </div>
-                  <div className="col-span-1">
                     <p className="font-normal text-lg leading-8 text-gray-400 text-center">
                       Total
                     </p>

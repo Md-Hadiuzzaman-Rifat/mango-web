@@ -39,7 +39,7 @@ const DetailsContent = ({ desc, img }) => {
     otherLink,
     sizeChart
   } = desc || {};
-  console.log(desc);
+
 
   // const sizes = makeSizes(extra);
 

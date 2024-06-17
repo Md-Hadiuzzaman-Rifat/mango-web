@@ -30,8 +30,6 @@ import {
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
-    console.log(data)
-    console.log("hello world");
   
     return (
       <div>
