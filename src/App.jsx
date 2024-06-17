@@ -23,9 +23,7 @@ const App = () => {
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
-          <Route to="/productDetails" element={<ProductDetails />}></Route>
-          
-
+          <Route path="/productDetails/:id" element={<ProductDetails />}></Route>
           <Route
               path="/dashboard"
               element={<ControllerPrivateRoute></ControllerPrivateRoute>}

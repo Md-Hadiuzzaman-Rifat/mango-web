@@ -7,6 +7,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
 import Services from "../../components/Services/Services";
+import { useGetProductsQuery } from "../../features/product/productApi.js";
+import ProductListSkeleton from "../../components/ProductListSkeleton/ProductListSkeleton.jsx";
+
+
 
 const Home = () => {
   // eslint-disable-next-line no-undef
@@ -19,12 +23,22 @@ const Home = () => {
     });
     AOS.refresh();
   }, []);
+
+  const { data, isSuccess, isLoading } = useGetProductsQuery();
+
+
   return (
     <div>
       <Hero />
       <Services></Services>
       <Content></Content>
-      <Products></Products>
+      {
+        isLoading && <ProductListSkeleton/>
+      }
+      {
+        !isLoading && isSuccess
+         && data?.length > 0 && <Products data={data}></Products>
+      }
       <Reviews></Reviews>
       <Footer></Footer>
     </div>
