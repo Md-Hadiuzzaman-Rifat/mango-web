@@ -14,6 +14,7 @@ import CreateCategory from "./AdminPannel/pages/Category/CreateCategory";
 import ProductTable from "./AdminPannel/components/ProductTable/ProductTable";
 import Invoice from "./AdminPannel/pages/Invoice/Invoice";
 import GarbageCollection from "./Pages/GarbageCollection/GarbageCollection";
+import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/home" element={<Home></Home>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/productDetails/:id" element={<ProductDetails />}></Route>
+          <Route path="/shoppingCart" element={<ShoppingCart />}></Route>
           <Route
               path="/dashboard"
               element={<ControllerPrivateRoute></ControllerPrivateRoute>}
