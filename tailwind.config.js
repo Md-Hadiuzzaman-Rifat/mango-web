@@ -8,6 +8,7 @@ export default {
         secondary: "#e86f00",
         primaryDark: "#d65609",
         dark: "#656565",
+        warning:"#FF5733"
       },
       container: {
         center: true,

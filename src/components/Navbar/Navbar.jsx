@@ -7,7 +7,7 @@ const Navbar = ({ sidebar, setSidebar }) => {
       <div data-aos="fade-down" className="container">
         <div className="flex justify-between items-center">
           <h1 className="text-4xl font-bold uppercase ">
-            Straw<span className="font-normal ">Berries</span>
+            <span className="font-normal ">{import.meta.env.VITE_WEB_NAME}</span>
           </h1>
           <ul className="space-x-14 text-xl hidden lg:flex">
             <li>

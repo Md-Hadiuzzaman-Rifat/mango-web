@@ -24,9 +24,6 @@ const ShoppingCart = () => {
     window.scrollTo(0, 0);
   }, []);
 
-// {
-//   console.log(cart);
-// }
 
   const [totalPrice, setTotalPrice] = useState(0);
   const { formCondition } = useSelector((state) => state.cartHandler);

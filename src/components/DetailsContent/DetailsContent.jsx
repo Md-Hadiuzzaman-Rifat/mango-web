@@ -147,7 +147,7 @@ const DetailsContent = ({ desc, img }) => {
       {/* // warning  */}
       <div style={warning ? { display: "block" } : { display: "none" }}>
         <p className="bg-red-200 border font-semibold text-red-700 border-red-700 rounded-sm p-2 text-xl text-center mt-2 duration-100 font-abc">
-          Please Select Quantity
+          দয়া করে আগে পরিমাণ নির্ধারণ করুন
         </p>
       </div>
       {/* // stock check  */}
@@ -163,8 +163,8 @@ const DetailsContent = ({ desc, img }) => {
           {/* // quantity start */}
           <div className="lg:mt-11 mt-10">
             <div className="flex flex-row items-center justify-between">
-              <p className=" font-semibold text-base leading-4 text-gray-600 dark:text-gray-200 font-abc">
-                {"Select quantity".toUpperCase()}
+              <p className=" font-semibold text-primary text-base leading-4 text-gray-600 dark:text-gray-200 font-abc">
+                পরিমান নির্ধারণ করুন
               </p>
               <div className="flex">
                 <span

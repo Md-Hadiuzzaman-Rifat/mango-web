@@ -17,20 +17,26 @@ import GarbageCollection from "./Pages/GarbageCollection/GarbageCollection";
 import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart";
 import Payment from "./components/Payment/Payment";
 import OrderSuccess from "./components/OrderSuccess/OrderSuccess"
+import MainPageLayout from "./components/MainPageLayout/MainPageLayout"
+import Category from "./Category/Category"
 
 const App = () => {
   return (
     <div>
       <AuthProvider>
+      <MainPageLayout>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/home" element={<Home></Home>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/productDetails/:id" element={<ProductDetails />}></Route>
           <Route path="/shoppingCart" element={<ShoppingCart />}></Route>
-          
           <Route path="orderSuccess" element={<OrderSuccess />}></Route>
           <Route path="/paymentPage" element={<Payment />}></Route>
+          <Route
+              path="/category/:categoryName"
+              element={<Category />}
+            ></Route>
           <Route
               path="/dashboard"
               element={<ControllerPrivateRoute></ControllerPrivateRoute>}
@@ -40,7 +46,7 @@ const App = () => {
               {/* <Route path="users" element={<AllUsers />}></Route> */}
               <Route path="edit/:id" element={<EditProduct />}></Route>
               <Route path="upload" element={<UploadProduct />}></Route>
-
+              
               <Route
                 path="orders"
                 element={<OrderCollection></OrderCollection>}
@@ -55,6 +61,7 @@ const App = () => {
             </Route>
           
         </Routes>
+        </MainPageLayout>
       </AuthProvider>
     </div>
   );

@@ -2,7 +2,7 @@
 import ProductCard from "./ProductsCard";
 const Products = ({data}) => {
   return (
-    <div>
+    <div className="my-28">
       <div className="container">
         <ProductCard data={data} />
       </div>

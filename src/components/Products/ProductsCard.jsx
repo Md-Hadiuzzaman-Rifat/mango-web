@@ -4,7 +4,6 @@ import Button from "../Button/Button";
 // eslint-disable-next-line react/prop-types
 
 const ProductCard = ({ data }) => {
-
   return (
     <div className="mb-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center">
@@ -27,7 +26,7 @@ const ProductCard = ({ data }) => {
                 <Link to={`/productDetails/${data?._id}`}>
                   <Button
                     text={"View Details"}
-                    bgColor={"bg-primary"}
+                    bgColor={"bg-warning"}
                     textColor={"text-white"}
                   />
                 </Link>

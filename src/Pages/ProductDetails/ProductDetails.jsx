@@ -12,6 +12,7 @@ import {
   import { useEffect } from "react";
   import DetailsSkeleton from "../../components/DetailsSkeleton/DetailsSkeleton";
   import { useSelector } from "react-redux";
+import ProductCard from "../../components/Products/ProductsCard";
   // import QuickView from "../../components/QuickView/QuickView";
   
   
@@ -45,20 +46,30 @@ import {
                 ></DetailsContent>
               </div>
             )}
-            
+           
             {/* // youtube video  */}
-            {/* {!isLoading && data && data?.description?.videoLink && (
-              <div
-                className="aspect-w-16 aspect-h-9 mt-8 container"
-                dangerouslySetInnerHTML={{
-                  __html: data?.description?.videoLink,
-                }}
-              ></div>
-            )} */}
+            {!isLoading && data && data?.description?.videoLink && (
+            <div
+              className="aspect-w-16 aspect-h-9 mt-8 container"
+              dangerouslySetInnerHTML={{
+                __html: data?.description?.videoLink,
+              }}
+            ></div>
+          )}
           </div>
           {isError && "Failed to load"}
         </div>
-        
+        {/* // category  */}
+          <div 
+          className="mt-64 mb-32"
+          >
+        {allProductSuccess && isSuccess && (
+        <ProductCard
+          data={allProductData}
+          category={data?.description?.category}
+        ></ProductCard>
+      )}      
+      </div>  
         <div className="mb-16"></div>
         {/* <FooterBanner></FooterBanner> */}
       </div>
@@ -67,19 +78,3 @@ import {
   
   export default ProductDetails;
   
-
-  // {/* // item by the same category  */}
-  // {allProductSuccess && isSuccess && (
-  //   <CategoryPage
-  //     data={allProductData}
-  //     category={data?.description?.category}
-  //   ></CategoryPage>
-  // )}
-
-  // {/* // item by the same sub category  */}
-  // {allProductSuccess && isSuccess && (
-  //   <SubCategoryPage
-  //     data={allProductData}
-  //     subcategory={data?.description?.subcategory}
-  //   ></SubCategoryPage>
-  // )}
