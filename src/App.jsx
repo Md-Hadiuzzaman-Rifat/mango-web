@@ -22,7 +22,7 @@ import Category from "./Category/Category"
 
 const App = () => {
   return (
-    <div>
+    <div className="scroll-smooth">
       <AuthProvider>
       <MainPageLayout>
         <Routes>

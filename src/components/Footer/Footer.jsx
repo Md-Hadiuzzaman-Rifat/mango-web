@@ -3,7 +3,7 @@ import { FaSquarePhone } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <section className="relative pb-16 bg-gradient-to-r from-primary to-secondary w-full md:rounded-xl shadow-md">
+    <section id="footer" className="mt-32 relative pb-16 bg-gradient-to-r from-primary to-secondary w-full md:rounded-xl shadow-md">
       <div className="container flex flex-row flex-wrap gap-4 justify-around text-white p-4">
         <div className="max-w-[300px]">
           <h1 className=" text-3xl sm:text-4xl font-bold my-8">Mango Mint</h1>
