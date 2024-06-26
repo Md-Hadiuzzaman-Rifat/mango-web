@@ -6,7 +6,7 @@ const Footer = () => {
     <section id="footer" className="mt-32 relative pb-16 bg-gradient-to-r from-primary to-secondary w-full md:rounded-xl shadow-md">
       <div className="container flex flex-row flex-wrap gap-4 justify-around text-white p-4">
         <div className="max-w-[300px]">
-          <h1 className=" text-3xl sm:text-4xl font-bold my-8">Mango Mint</h1>
+          <h1 className=" text-3xl sm:text-4xl font-bold my-8">Tea Heaven</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea
             ratione quidem libero, praesentium ab atque? Quidem maxime, numquam
@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <h1 className=" text-3xl sm:text-4xl font-bold my-8">Mango Mint</h1>
+          <h1 className=" text-3xl sm:text-4xl font-bold my-8">Tea Kingdom Sylhet</h1>
           <p>Home</p>
           <p>About</p>
           <p>Contact</p>

@@ -56,7 +56,7 @@ import {
           {isError && "Failed to load"}
         </div>
         <p className="container mt-12 font-bold text-2xl">Similar Product</p>
-          <div className="w-full container h-[2px] bg-orange-300 mt-4"></div>
+          <div className="w-full container h-[2px] bg-primary mt-4"></div>
         {/* // category  */}
           <div 
           className="my-12 container"

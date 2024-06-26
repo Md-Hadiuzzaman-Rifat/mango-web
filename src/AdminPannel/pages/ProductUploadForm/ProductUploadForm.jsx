@@ -325,20 +325,19 @@ export default function ProductUploadForm() {
             </div>
             {/* // stock end  */}
 
-            <div className="col-span-full mb-4">
+            {/* <div className="col-span-full mb-4">
               <label
                 htmlFor="description"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Description
               </label>
-              {/* // text area  */}
 
               <TextArea
                 description={description}
                 setDescription={setDescription}
               ></TextArea>
-            </div>
+            </div> */}
 
             <div className="col-span-full">
               <label

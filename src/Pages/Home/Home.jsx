@@ -36,6 +36,10 @@ const Home = () => {
         !isLoading && isSuccess
          && data?.length > 0 && <Products data={data}></Products>
       }
+      {
+        !isLoading && isSuccess
+         && data?.length === 0 && <p className="font-bold text-2xl text-gray-400">No Product Uploaded</p>
+      }
       <div className="w-full mt-32 bg-primary p-4 text-2xl text-center font-bold text-white mb-16">
         <h2>আমরা কেন সেরা? </h2>
       </div>

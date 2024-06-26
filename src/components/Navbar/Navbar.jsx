@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 import { GiHamburgerMenu } from "react-icons/gi";
-
 const Navbar = ({ sidebar, setSidebar }) => {
   return (
     <div className="absolute top-0 left-0 w-full py-2 text-white z-20">
       <div data-aos="fade-down" className="container">
         <div className="flex justify-between items-center">
-          <h1 className="text-4xl font-bold uppercase ">
+          <h1 className="text-4xl font-bold uppercase cursor-pointer">
             <span className="font-normal ">{import.meta.env.VITE_WEB_NAME}</span>
           </h1>
           <ul className="space-x-14 text-xl hidden lg:flex">

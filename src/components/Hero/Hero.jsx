@@ -1,5 +1,4 @@
 import React from "react";
-import HeroImg from "../../assets/mango/5.png";
 import Navbar from "../Navbar/Navbar";
 import { FaFacebookF, FaPhoneAlt } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -44,8 +43,8 @@ const Hero = () => {
             <div>
               <img
                 data-aos="zoom-in"
-                className="img-shadow relative z-[1] w-[400px]"
-                src={HeroImg}
+                className="img-shadow relative mt-[-50px] z-[1] w-[600px]"
+                src={import.meta.env.VITE_MAIN_IMG}
                 alt="orange"
               />
             </div>
@@ -57,7 +56,7 @@ const Hero = () => {
           data-aos="zoom-out"
           className="text-center text-[80px] sm:text-[120px] md:text-[150px] xl:text-[180px]  text-white uppercase font-bold absolute bottom-0 w-full z-10 text-shadow"
         >
-          Mango
+          {import.meta.env.VITE_BIG_TEXT}
         </h1>
         {sidebar && (
           <div className="absolute top-0 right-0 w-[120px] h-full bg-gradient-to-b from-primary to-secondary z-10">

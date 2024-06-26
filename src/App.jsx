@@ -19,6 +19,8 @@ import Payment from "./components/Payment/Payment";
 import OrderSuccess from "./components/OrderSuccess/OrderSuccess"
 import MainPageLayout from "./components/MainPageLayout/MainPageLayout"
 import Category from "./Category/Category"
+import AdminLogin from "./AdminPannel/pages/AdminLogin/AdminLogin"
+import Register from "./Pages/Register/Register"
 
 const App = () => {
   return (
@@ -31,12 +33,14 @@ const App = () => {
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/productDetails/:id" element={<ProductDetails />}></Route>
           <Route path="/shoppingCart" element={<ShoppingCart />}></Route>
-          <Route path="orderSuccess" element={<OrderSuccess />}></Route>
+          <Route path="/orderSuccess" element={<OrderSuccess />}></Route>
+          <Route path="/register" element={<Register />}></Route>
           <Route path="/paymentPage" element={<Payment />}></Route>
           <Route
               path="/category/:categoryName"
               element={<Category />}
             ></Route>
+            <Route path="/adminLogin" element={<AdminLogin />}></Route>
           <Route
               path="/dashboard"
               element={<ControllerPrivateRoute></ControllerPrivateRoute>}

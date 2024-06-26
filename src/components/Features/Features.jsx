@@ -10,7 +10,7 @@ const Features = () => {
               <div
                 data-aos="fade-right"
                 data-aos-delay={data.aosDelay}
-                className="border-solid border-2 shadow-md shadow-orange-300/50 border-orange-300 m-2 rounded-md min-h-20"
+                className="border-solid border-2 shadow-md shadow-primaryDark border-secondary m-2 rounded-md min-h-20"
                 key={id}
               >
                 <p className="font-bold text-lg m-2">{data}</p>
