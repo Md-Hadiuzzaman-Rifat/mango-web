@@ -3,8 +3,7 @@ import { whyWeBest } from "../../utils/reviews";
 const Features = () => {
   return (
     <div className="container my-24">
-      
-      <div className="w-full gap-4 flex lg:justify-around flex-col items-center lg:flex-row flex-wrap ">
+      <div className="w-full gap-16 flex lg:justify-around flex-col items-center lg:flex-row flex-wrap ">
         <div className="max-w-[400px] lg:max-w-[500]">
           <div>
             {whyWeBest?.map((data, id) => (

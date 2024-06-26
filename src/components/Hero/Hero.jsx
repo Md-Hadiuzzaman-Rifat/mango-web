@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImg from "../../assets/mango/5.png";
 import Navbar from "../Navbar/Navbar";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaPhoneAlt } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
 const Hero = () => {
@@ -66,13 +66,30 @@ const Hero = () => {
                 {/* line */}
                 <div className="w-[1px] h-[70px] bg-white"></div>
                 <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
-                  <FaFacebookF className="text-2xl" />
+                  <a
+                    href={`${import.meta.env.VITE_FACEBOOK}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookF className="text-2xl" />
+                  </a>
                 </div>
                 <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
-                  <FaInstagram className="text-2xl" />
+                  <a
+                    href={`${import.meta.env.VITE_INSTAGRAM}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagram className="text-2xl" />
+                  </a>
                 </div>
                 <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
-                  <FaLinkedinIn className="text-2xl" />
+                  <a
+                    href={`tel:{+88${import.meta.env.VITE_PHONE}}`}
+                    className="flex items-center gap-2"
+                  >
+                    <FaPhoneAlt className="text-2xl" />
+                  </a>
                 </div>
                 {/* line */}
                 <div className="w-[1px] h-[70px] bg-white"></div>

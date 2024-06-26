@@ -1,9 +1,18 @@
+
+
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
-import Button from "../Button/Button";
-// eslint-disable-next-line react/prop-types
+// import { Link } from "react-router-dom";
+// import Button from "../Button/Button";
+
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ data }) => {
+  const navigate= useNavigate()
+  const handleNavigate=(url)=>{
+    navigate(url)
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className="mb-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center">
@@ -23,13 +32,11 @@ const ProductCard = ({ data }) => {
               />
               {/* hover button */}
               <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-full w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200 rounded-md">
-                <Link to={`/productDetails/${data?._id}`}>
-                  <Button
-                    text={"View Details"}
-                    bgColor={"bg-warning"}
-                    textColor={"text-white"}
-                  />
-                </Link>
+                
+                  <button
+                    className="bg-warning text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10"
+                    onClick={()=>handleNavigate(`/productDetails/${data?._id}`)}
+                  >View Details</button>
               </div>
             </div>
             <div className="leading-7">

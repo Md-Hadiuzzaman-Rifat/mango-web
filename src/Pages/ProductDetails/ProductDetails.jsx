@@ -6,14 +6,10 @@ import {
   import { useParams } from "react-router-dom";
   import DetailsImage from "../../components/DetailsImage/DetailsImage";
   import DetailsContent from "../../components/DetailsContent/DetailsContent";
-  // import CategoryPage from "../CategoryPage/CategoryPage";
-  // import SubCategoryPage from "../../components/SubCategoryPage/SubCategoryPage";
-  // import FooterBanner from "../../components/FooterBanner/FooterBanner";
   import { useEffect } from "react";
   import DetailsSkeleton from "../../components/DetailsSkeleton/DetailsSkeleton";
   import { useSelector } from "react-redux";
-import ProductCard from "../../components/Products/ProductsCard";
-  // import QuickView from "../../components/QuickView/QuickView";
+ import ProductCard from "../../components/Products/ProductsCard";
   
   
   const ProductDetails = () => {
@@ -59,9 +55,11 @@ import ProductCard from "../../components/Products/ProductsCard";
           </div>
           {isError && "Failed to load"}
         </div>
+        <p className="container mt-12 font-bold text-2xl">Similar Product</p>
+          <div className="w-full container h-[2px] bg-orange-300 mt-4"></div>
         {/* // category  */}
           <div 
-          className="mt-64 mb-32"
+          className="my-12 container"
           >
         {allProductSuccess && isSuccess && (
         <ProductCard

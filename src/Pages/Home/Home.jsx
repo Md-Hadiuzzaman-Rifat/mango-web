@@ -36,7 +36,7 @@ const Home = () => {
         !isLoading && isSuccess
          && data?.length > 0 && <Products data={data}></Products>
       }
-      <div className="w-full bg-primary p-4 text-2xl text-center font-bold text-white mb-16">
+      <div className="w-full mt-32 bg-primary p-4 text-2xl text-center font-bold text-white mb-16">
         <h2>আমরা কেন সেরা? </h2>
       </div>
       <Features></Features>

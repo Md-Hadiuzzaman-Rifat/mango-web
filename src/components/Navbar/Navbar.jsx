@@ -14,10 +14,10 @@ const Navbar = ({ sidebar, setSidebar }) => {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Where to find</a>
+              <a href="#products">Where to find</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#footer">Contact</a>
             </li>
           </ul>
           <div onClick={() => setSidebar(!sidebar)}>
