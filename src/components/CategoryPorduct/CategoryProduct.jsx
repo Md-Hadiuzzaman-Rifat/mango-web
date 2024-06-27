@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 
 const CategoryProduct = ({ data }) => {
-  console.log(data);
+  
   return (
       <div
         className="group"

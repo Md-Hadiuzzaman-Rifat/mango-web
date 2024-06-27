@@ -1,5 +1,5 @@
 import "./Modal.scss"
-import Button from '../Button/Button';
+// import Button from '../Button/Button';
 import { useSelector, useDispatch  } from 'react-redux';
 import { modalClose } from '../../features/cartHandler/cartHandler';
 

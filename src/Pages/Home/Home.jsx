@@ -10,7 +10,7 @@ import { useGetProductsQuery } from "../../features/product/productApi.js";
 import ProductListSkeleton from "../../components/ProductListSkeleton/ProductListSkeleton.jsx";
 import ReviewCarousel from "../../components/ReviewCarousel/ReviewCarouse.jsx"
 import Features from "../../components/Features/Features.jsx";
-
+import ExtraInfo from "../../components/ExtraInfo/ExtraInfo.jsx"
 const Home = () => {
   // eslint-disable-next-line no-undef
   React.useEffect(() => {
@@ -44,6 +44,7 @@ const Home = () => {
         <h2>আমরা কেন সেরা? </h2>
       </div>
       <Features></Features>
+      <ExtraInfo></ExtraInfo>
       <div className="bg-primary mt-32">
       <h1 className="container font-bold text-white p-4 text-center text-4xl">Reviews</h1>
       </div>

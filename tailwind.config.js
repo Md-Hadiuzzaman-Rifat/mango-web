@@ -20,6 +20,9 @@ export default {
           sm: "2rem",
         },
       },
+      backgroundImage: {
+        'tea-texture': "url('/tea_bg.jpg')",
+      }
     },
   },
   plugins: [],
