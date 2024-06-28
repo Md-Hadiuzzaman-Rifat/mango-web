@@ -7,9 +7,9 @@ export default {
         // primary: "#f39c0b",
         // secondary: "#e86f00",
         // primaryDark: "#d65609",
-        primary: "#317256",
-        secondary: "#54ab7c",
-        primaryDark: "#2c442c",
+        primary: "#404443",
+        secondary: "#94929c",
+        primaryDark: "#222",
         dark: "#656565",
         warning:"#FF5733"
       },
