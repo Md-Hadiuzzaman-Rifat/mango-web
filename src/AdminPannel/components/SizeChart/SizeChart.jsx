@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 //  eslint-disable no-unused-vars
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import {
   useAddSizeChartMutation,
   useGetSizeChartQuery,
@@ -59,6 +59,7 @@ function SizeChart() {
 
         <input
           type="text"
+          className="border p-1 rounded-md"
           required
           placeholder="Size Chart Name"
           onChange={(e) => setSizeName(e.target.value)}

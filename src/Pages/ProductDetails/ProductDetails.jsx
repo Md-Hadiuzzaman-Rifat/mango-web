@@ -13,7 +13,6 @@ import {
   
   
   const ProductDetails = () => {
-  
     const { id } = useParams();
     const { data, isLoading, isError, isSuccess } = useGetSingleProductQuery(id);
     const { open } = useSelector((state) => state?.popUp);

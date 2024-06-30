@@ -4,7 +4,7 @@
 
 import { useState } from "react";
 import { MdOutlineStar } from "react-icons/md";
-// import { makeSizes } from "../../utils/sizes";
+import { makeSizes } from "../../utils/sizes";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { orderFormOpen } from "../../features/cartHandler/cartHandler";
@@ -13,6 +13,7 @@ import { PiToiletPaperLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
 // import SizeModal from "../SizeModal/SizeModal";
 import { sizeModalOpen } from "../../features/sizeModalSlice/sizeModalSlice";
+import SizeModal from "../SizeModal/SizeModal";
 
 const DetailsContent = ({ desc, img }) => {
   const [rotate, setRotate] = useState(false);
@@ -41,7 +42,7 @@ const DetailsContent = ({ desc, img }) => {
   } = desc || {};
 
 
-  // const sizes = makeSizes(extra);
+  const sizes = makeSizes(extra);
 
   // make a single number to array for rating
   let newArr = [];
@@ -84,7 +85,10 @@ const DetailsContent = ({ desc, img }) => {
     }
   };
 
-
+  const handleSize = (value, index) => {
+    setSelectSize(value);
+    setSelectedIndex(index);
+  };
 
   const handlePurchase = () => {
     if ( count === 0) {
@@ -104,7 +108,7 @@ const DetailsContent = ({ desc, img }) => {
 
   return (
     <div className="  w-full sm:w-auto md:w-8/12 lg:w-6/12 items-center">
-      {/* {isOpen && <SizeModal />} */}
+      {isOpen && <SizeModal />}
       <p className=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 font-normal text-base leading-4 text-gray-600 font-abc  dark:text-gray-400">
         {category?.toUpperCase()}
       </p>
@@ -142,7 +146,23 @@ const DetailsContent = ({ desc, img }) => {
       </div>
 
       <p className="font-abc font-semibold mt-4">{extraInfo?.toUpperCase()}</p>
-
+{/* sizes start */}
+<div className="flex flex-row gap-2 mt-2 flex-wrap">
+        {sizes.map((item, index) => (
+          <div
+            key={index}
+            className={`${
+              selectedIndex === index
+                ? "transition border cursor-pointer hover:shadow-md font-bold bg-gray-800 text-gray-100 px-6 py-1 duration-100"
+                : "transition border cursor-pointer hover:shadow-md px-6 py-1 duration-100"
+            }`}
+            onClick={() => handleSize(item, index)}
+          >
+            {item.replace(/\s/g, "").toUpperCase()}
+          </div>
+        ))}
+      </div>
+      {/*  sizes end  */}
 
       {/* // warning  */}
       <div style={warning ? { display: "block" } : { display: "none" }}>

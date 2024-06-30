@@ -51,6 +51,7 @@ function CategoryForm() {
         <input
           required
           type="text"
+          className="border p-1 rounded-md"
           value={category}
           placeholder="Category Name"
           onChange={(e) => setCategory(e.target.value)}
