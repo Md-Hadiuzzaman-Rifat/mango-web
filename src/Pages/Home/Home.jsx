@@ -11,6 +11,7 @@ import ProductListSkeleton from "../../components/ProductListSkeleton/ProductLis
 import ReviewCarousel from "../../components/ReviewCarousel/ReviewCarouse.jsx"
 import Features from "../../components/Features/Features.jsx";
 import ExtraInfo from "../../components/ExtraInfo/ExtraInfo.jsx"
+
 const Home = () => {
   // eslint-disable-next-line no-undef
   React.useEffect(() => {

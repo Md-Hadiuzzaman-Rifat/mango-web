@@ -8,8 +8,6 @@ const Features = () => {
           <div>
             {whyWeBest?.map((data, id) => (
               <div
-                data-aos="fade-right"
-                data-aos-delay={data.aosDelay}
                 className="border-solid border-2 shadow-md shadow-primaryDark border-secondary m-2 rounded-md min-h-20"
                 key={id}
               >
