@@ -54,6 +54,7 @@ function CategoryForm() {
           value={category}
           placeholder="Category Name"
           onChange={(e) => setCategory(e.target.value)}
+          className="border-gray-300 border-[1px] rounded-md p-1"
         />
         <button
           type="submit"
