@@ -3,8 +3,8 @@ import ProductCard from "./ProductsCard";
 const Products = ({data}) => {
   return (
     <div id="products">
-      <p className="container font-bold text-4xl">Order Now</p>
-      <div className="h-[2px] w-full container bg-primary my-12"></div>
+      <p className="container font-bold bg-primary text-3xl py-2 text-white">অর্ডার করুন</p>
+      <div className="[2px] w-full container bg-primary my-12"></div>
       <div className="container">
         <ProductCard data={data} />
       </div>

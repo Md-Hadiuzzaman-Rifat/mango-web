@@ -26,9 +26,9 @@ const ProductCard = ({ data }) => {
           >
             <div className="relative">
               <img
-                src={`${import.meta.env.VITE_ROOT_API}/images/${data?.images[0]?.filename}`}
+                src={`${import.meta.env.VITE_ROOT_API}/Images/${data?.images[0]?.filename}`}
                 alt=""
-                className="h-[180px] w-[260px] object-cover rounded-md"
+                className="h-[250px] w-[260px] object-cover rounded-md"
               />
               {/* hover button */}
               <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-full w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200 rounded-md">

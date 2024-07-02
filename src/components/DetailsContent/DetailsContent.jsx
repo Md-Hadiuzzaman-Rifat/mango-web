@@ -192,12 +192,12 @@ const DetailsContent = ({ desc, img }) => {
           </div>
           {/* // quantity end  */}
           <Link to="/">
-            <button className="focus:outline-none focus:ring-2 hover:bg-black focus:ring-offset-2 focus:ring-gray-800 font-medium text-base leading-4 text-white bg-gray-700 w-full py-4 lg:mt-4 mt-2">
+            <button className="focus:outline-none focus:ring-2 hover:bg-black focus:ring-offset-2 focus:ring-gray-800 font-medium text-base leading-4 text-white bg-secondary w-full py-4 lg:mt-4 mt-2">
               Buy More
             </button>
           </Link>
           <button
-            className="focus:outline-none focus:ring-2 hover:bg-black focus:ring-offset-2 focus:ring-gray-800 font-medium text-base leading-4 text-white bg-gray-800 w-full py-4 lg:mt-4 mt-2"
+            className="focus:outline-none focus:ring-2 hover:bg-black focus:ring-offset-2 focus:ring-gray-800 font-medium text-base leading-4 text-white bg-primary w-full py-4 lg:mt-4 mt-2"
             onClick={handlePurchase}
           >
             Go For Payment

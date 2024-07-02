@@ -53,6 +53,7 @@ function CategoryForm() {
           type="text"
           value={category}
           placeholder="Category Name"
+          className="border-2 p-1 rounded-md"
           onChange={(e) => setCategory(e.target.value)}
         />
         <button
